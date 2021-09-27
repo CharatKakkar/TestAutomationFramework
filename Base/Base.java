@@ -7,6 +7,8 @@ class Base{
 
   public Base(){
     WebDriver driver = new ChromeDriver();
-    System.out.print("In Base..");
+  //  driver.get("https://www.google.com/");
+  //  System.out.println(driver.getTitle());
+ //   System.out.print("In Base..");
   }
 }
