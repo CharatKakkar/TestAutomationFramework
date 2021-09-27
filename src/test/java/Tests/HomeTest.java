@@ -31,7 +31,6 @@ public class HomeTest extends  Base{
 
     @Test
     public void testWebDriver(){
-        Home home    = new Home();
         home.getURl(Constants.URL);
         WebElement cat  = home.getCategories("housing");
         List<WebElement> list  =  home.getAllSubCategories("housing","housing");
@@ -41,7 +40,6 @@ public class HomeTest extends  Base{
 
     @Test
     public void testWebDriver_2(){
-        Home home    = new Home();
         home.getURl(Constants.URL);
         home.clickSubCategory("community","services","cycle");
     }
@@ -59,7 +57,6 @@ public class HomeTest extends  Base{
 
     @Test
     public void testWebDriver_2_sorting() {
-        Home home    = new Home();
         home.getURl(Constants.URL);
         home.clickSubCategory("housing","for sale","tools");
         Assert.assertTrue(subClass.validatePreSearchSortOptions());
@@ -72,7 +69,6 @@ public class HomeTest extends  Base{
 
     @Test
     public void testWebDriver_2_search() {
-        Home home    = new Home();
         home.getURl(Constants.URL);
         home.clickSubCategory("housing","housing","apts / housing");
         subClass.performSearch("abc");
