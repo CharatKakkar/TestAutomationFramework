@@ -1,11 +1,10 @@
 package pages;
 
-import Base.Base;
+import base.Base;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Home extends Base{
