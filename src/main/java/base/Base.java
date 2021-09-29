@@ -1,24 +1,18 @@
 package base;
 
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import utils.Constants;
-import utils.Driver;
+import org.openqa.selenium.support.PageFactory;
 
-import java.util.concurrent.TimeUnit;
-
-public class Base{
+public class Base {
 
   public WebDriver driver;
+  public Logger log;
 
-  public Base(){
-    System.setProperty("webdriver.chrome.driver", Constants.ChromeDriverLocation);
-    driver =  Driver.getDriver_instance("Chrome");
-    driver.manage().timeouts().implicitlyWait(1000, TimeUnit.MILLISECONDS);
-    System.out.print("In Base..");
+  public Base(WebDriver driver, Logger log){
+    this.driver = driver;
+    this.log = log;
+    PageFactory.initElements(driver,this);
   }
 
-  public void getURl(String url){
-
-    driver.get(url);
-  }
 }

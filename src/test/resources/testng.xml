@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite_Sorting"  parallel="tests" thread-count="2"  >
+    <listeners>
+        <listener class-name="utils.TestExecutionListener"/>
+    </listeners>
+    <test name="Test Sorting Options" >
+        <parameter name="browserName" value="Chrome"/>
+        <classes>
+            <class name="tests.SortingTests" />
+        </classes>
+    </test>
+    <test name="Test Sorting Options_FF" >
+        <parameter name="browserName" value="Firefox"/>
+        <classes>
+            <class name="tests.SortingTests" />
+        </classes>
+    </test>
+</suite>
