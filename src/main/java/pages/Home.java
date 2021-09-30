@@ -13,8 +13,10 @@ public class Home extends Base{
         super(driver,log);
     }
 
-    @Step("Open Page - {0} ")
-    public void openPage(String cat){
-        driver.findElement(By.linkText(cat)).click();
+    @Step("Navigate to Page - {0} ")
+    public void navigateToPage(String page){
+     By locator = elemUtil.getBy("linktext",page);
+     elemUtil.getElement(locator).click();
     }
+
 }

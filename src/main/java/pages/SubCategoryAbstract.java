@@ -43,8 +43,6 @@ public abstract class SubCategoryAbstract extends Base {
     @FindBy(xpath="//button[contains(@class,'searchbtn')]")
     WebElement searchButton;
 
-    By resultPriceLocator = By.xpath("//div[@class='result-info']//span[@class='result-price']");
-
     @Step("Selecting Sort type {0}")
     public void SelectSortType(String type){
         sortOption_click();
@@ -74,19 +72,23 @@ public abstract class SubCategoryAbstract extends Base {
 
     @Step("Perform search for - {0}")
     public void performSearch(String keys){
+        log.info("Searching:" + keys);
         searchField.sendKeys(keys);
         searchButton_click();
-
     }
 
     @Step("Verify results are sorted by: {0}")
     public boolean checkPriceSorting(String sortType){
-        return Helper.verifyPriceSorting(sortType,results,resultPriceLocator);
+        return Helper.verifyPriceSorting(sortType,results,resultPriceLocator());
     }
 
     @Step("Validate Search Sort Options: {0}")
     public boolean validateSearchSortOptions(List<String> optionsToValidate){
         return Helper.validateSearchSortOptions(optionsToValidate,sortSelectOptions);
+    }
+
+    private By resultPriceLocator(){
+        return elemUtil.getBy("xpath","//div[@class='result-info']//span[@class='result-price']");
     }
 
 }

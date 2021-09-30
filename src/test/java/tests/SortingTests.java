@@ -6,6 +6,7 @@ import io.qameta.allure.SeverityLevel;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import utils.ExcelDataProvider;
 import utils.Pages;
 import utils.SortType;
 import utils.TestExecutionListener;
@@ -14,56 +15,33 @@ import utils.TestExecutionListener;
 public class SortingTests extends BaseTest{
 
     @Severity(SeverityLevel.NORMAL)
-    @Description("Verify Asc Sorting on apts / housing page")
-    @Test
-    public void TestAscSorting(){
-        site.homePage.openPage(Pages.apt_sub);
-        Assert.assertTrue(site.housingPage.validateSearchSortOptions(SortType.getPreSearchSortOptions()));
-        site.housingPage.SelectSortType(SortType.Ascending);
-        Assert.assertTrue(site.housingPage.checkPriceSorting (SortType.Ascending));
-        site.housingPage.next_click();
-        site.housingPage.SelectSortType(SortType.Ascending);
-        Assert.assertTrue(site.housingPage.checkPriceSorting (SortType.Ascending));
-    }
-
-    @Severity(SeverityLevel.NORMAL)
     @Description("Verify Desc Sorting on apts / housing page")
-    @Test
-    public void TestDescSorting(){
-        site.homePage.openPage(Pages.apt_sub);
-        site.housingPage.SelectSortType(SortType.Descending);
-        Assert.assertTrue(site.housingPage.checkPriceSorting (SortType.Descending));
+    @Test(dataProvider="SortTestData" , dataProviderClass = ExcelDataProvider.class , groups = {"Eng", "Fr"})
+    public void testDescSorting(String sortType){
+        site.homePage.navigateToPage(prop.getProperty("apt_housing"));
+        site.housingPage.SelectSortType(sortType);
+        Assert.assertTrue(site.housingPage.checkPriceSorting (sortType));
         site.housingPage.next_click();
-        site.housingPage.SelectSortType(SortType.Descending);
-        Assert.assertTrue(site.housingPage.checkPriceSorting (SortType.Descending));
-    }
-
-    @Severity(SeverityLevel.NORMAL)
-    @Description("Verify Default Sorting on apts / housing page")
-    @Test
-    public void testDefaultSorting() {
-        site.homePage.openPage(Pages.apt_sub);
-        Assert.assertTrue(site.housingPage.validateSearchSortOptions(SortType.getPreSearchSortOptions()));
+        site.housingPage.SelectSortType(sortType);
+        Assert.assertTrue(site.housingPage.checkPriceSorting (sortType));
     }
 
     @Severity(SeverityLevel.NORMAL)
     @Description("Verify Default Sorting on apts / housing page after search- invalid")
-    @Test
-    public void testAfterSearchSortOptionsInvalid() {
-        log.info(Thread.currentThread().getId() + " testAfterSearchSortOptionsInvalid");
-        site.homePage.openPage(Pages.apt_sub);
-        site.housingPage.performSearch("abc");
+    @Test(dataProvider="SearchTestData" , dataProviderClass = ExcelDataProvider.class,groups = {"Eng","Fr"})
+    public void testAfterSearchSortOptions(String SearchKey) {
+        site.homePage.navigateToPage(prop.getProperty("apt_housing"));
+        site.housingPage.performSearch(SearchKey);
         Assert.assertTrue(site.housingPage.validateSearchSortOptions(SortType.getPostSearchSortOptions()));
     }
 
     @Severity(SeverityLevel.NORMAL)
-    @Description("Verify Default Sorting on apts / housing page After search-Valid")
-    @Test
-    public void testAfterSearchSortOptionsValid() {
-        log.info(Thread.currentThread().getId() + " testAfterSearchSortOptionsValid");
-        site.homePage.openPage(Pages.apt_sub);
-        site.housingPage.performSearch("1 bed");
-        Assert.assertTrue(site.housingPage.validateSearchSortOptions(SortType.getPostSearchSortOptions()));
+    @Description("Verify Default Sorting on apts / housing page")
+    @Test(groups = {"Eng","Fr"})
+    public void testDefaultSorting() {
+        site.homePage.navigateToPage(prop.getProperty("apt_housing"));
+        Assert.assertTrue(site.housingPage.validateSearchSortOptions(SortType.getPreSearchSortOptions()));
     }
+
 
 }

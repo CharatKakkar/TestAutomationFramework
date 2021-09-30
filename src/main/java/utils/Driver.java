@@ -24,13 +24,6 @@ public class Driver {
 
         switch(driver){
 
-            case "Chrome":
-            {
-                System.setProperty("webdriver.chrome.driver", Constants.ChromeDriverLocation);
-                Driver_instance = new ChromeDriver();
-                break;
-
-            }
             case "Firefox":
             {
                 System.setProperty("webdriver.gecko.driver", Constants.FFDriverLocation);
@@ -53,7 +46,6 @@ public class Driver {
         Driver_instance =  getDriver(browserDriverName);
         Driver_instance.manage().timeouts().implicitlyWait(1000, TimeUnit.MILLISECONDS);
         Driver_instance.manage().window().maximize();
-        getURl(Constants.URL);
         return Driver_instance;
 
     }
@@ -61,7 +53,6 @@ public class Driver {
     public void getURl(String url){
         Driver_instance.get(url);
     }
-
 
 
 }
