@@ -5,7 +5,7 @@
         <listener class-name="utils.TestExecutionListener"/>
     </listeners>
 
-    <test name="Test Sorting Options- English" >
+    <test name="Test Sorting Options- English Chrome" >
         <parameter name="browserName" value="Chrome"/>
         <parameter name="lang" value="Eng"/>
         <groups>
@@ -19,7 +19,7 @@
     </test>
 
 
-    <test name="Test Sorting Options - French" >
+    <test name="Test Sorting Options - French Chrome" >
         <parameter name="browserName" value="Chrome"/>
         <parameter name="lang" value="Fr"/>
         <groups>
@@ -46,7 +46,7 @@
         </classes>
     </test>
 
-    <test name="Test Sorting Options - French FF" >
+    <test name="Test Sorting Options - French FireFox" >
         <parameter name="browserName" value="Firefox"/>
         <parameter name="lang" value="Fr"/>
         <groups>
