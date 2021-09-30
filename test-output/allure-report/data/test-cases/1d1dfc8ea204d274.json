@@ -1,0 +1,189 @@
+{
+  "uid" : "1d1dfc8ea204d274",
+  "name" : "validateAfterSearchSortOptions",
+  "fullName" : "tests.SortingTests.validateAfterSearchSortOptions",
+  "historyId" : "6b4ab6e7e701474259aa3069ea9a3603",
+  "time" : {
+    "start" : 1632975361844,
+    "stop" : 1632975376112,
+    "duration" : 14268
+  },
+  "description" : "Verify Default Sorting is available on apts / housing page after search",
+  "descriptionHtml" : "<p>Verify Default Sorting is available on apts / housing page after search</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "BeforeClass",
+    "time" : {
+      "start" : 1632975351179,
+      "stop" : 1632975351189,
+      "duration" : 10
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1632975351862,
+      "stop" : 1632975361826,
+      "duration" : 9964
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify Default Sorting is available on apts / housing page after search",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Navigate to Page - apts / housing ",
+      "time" : {
+        "start" : 1632975370273,
+        "stop" : 1632975374833,
+        "duration" : 4560
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "page",
+        "value" : "apts / housing"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Perform search for - ABC",
+      "time" : {
+        "start" : 1632975374874,
+        "stop" : 1632975375990,
+        "duration" : 1116
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "keys",
+        "value" : "ABC"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Validate Search Sort Options: [upcoming, date, priceasc, pricedsc, rel]",
+      "time" : {
+        "start" : 1632975375990,
+        "stop" : 1632975376112,
+        "duration" : 122
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "optionsToValidate",
+        "value" : "[upcoming, date, priceasc, pricedsc, rel]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1632975376127,
+      "stop" : 1632975377232,
+      "duration" : 1105
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.SortingTests"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.SortingTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "validateAfterSearchSortOptions"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suite_Sorting"
+  }, {
+    "name" : "suite",
+    "value" : "Test Sorting Options- English"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.SortingTests"
+  }, {
+    "name" : "host",
+    "value" : "TR-C7N09Y2"
+  }, {
+    "name" : "thread",
+    "value" : "119852@TR-C7N09Y2.TestNG-tests-1(20)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "ABC"
+  }, {
+    "name" : "browserName",
+    "value" : "Chrome"
+  }, {
+    "name" : "lang",
+    "value" : "Eng"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1d1dfc8ea204d274.json",
+  "parameterValues" : [ "ABC", "Chrome", "Eng" ]
+}

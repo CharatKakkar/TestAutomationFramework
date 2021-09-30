@@ -1,0 +1,240 @@
+{
+  "uid" : "1a81cefb3d6602fd",
+  "name" : "validateDefaultSorting",
+  "fullName" : "tests.SortingTests.validateDefaultSorting",
+  "historyId" : "9ee56331cbcfbd586bad9c03fff8033a",
+  "time" : {
+    "start" : 1632975500271,
+    "stop" : 1632975522740,
+    "duration" : 22469
+  },
+  "description" : "Verify Default Sorting works on apts / housing page",
+  "descriptionHtml" : "<p>Verify Default Sorting works on apts / housing page</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "BeforeClass",
+    "time" : {
+      "start" : 1632975351179,
+      "stop" : 1632975351189,
+      "duration" : 10
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1632975488765,
+      "stop" : 1632975500247,
+      "duration" : 11482
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify Default Sorting works on apts / housing page",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Navigate to Page - apts / housing ",
+      "time" : {
+        "start" : 1632975504753,
+        "stop" : 1632975508929,
+        "duration" : 4176
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "page",
+        "value" : "apts / housing"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Selecting Sort type pricedsc",
+      "time" : {
+        "start" : 1632975508934,
+        "stop" : 1632975513149,
+        "duration" : 4215
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "pricedsc"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Verify results are sorted by: pricedsc",
+      "time" : {
+        "start" : 1632975513170,
+        "stop" : 1632975516726,
+        "duration" : 3556
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "sortType",
+        "value" : "pricedsc"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click Next",
+      "time" : {
+        "start" : 1632975516726,
+        "stop" : 1632975516774,
+        "duration" : 48
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Selecting Sort type pricedsc",
+      "time" : {
+        "start" : 1632975516775,
+        "stop" : 1632975519333,
+        "duration" : 2558
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "pricedsc"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Verify results are sorted by: pricedsc",
+      "time" : {
+        "start" : 1632975519333,
+        "stop" : 1632975522740,
+        "duration" : 3407
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "sortType",
+        "value" : "pricedsc"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1632975522757,
+      "stop" : 1632975526730,
+      "duration" : 3973
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.SortingTests"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.SortingTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "validateDefaultSorting"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suite_Sorting"
+  }, {
+    "name" : "suite",
+    "value" : "Test Sorting Options - English Firefox"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.SortingTests"
+  }, {
+    "name" : "host",
+    "value" : "TR-C7N09Y2"
+  }, {
+    "name" : "thread",
+    "value" : "119852@TR-C7N09Y2.TestNG-tests-3(22)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "pricedsc"
+  }, {
+    "name" : "browserName",
+    "value" : "Firefox"
+  }, {
+    "name" : "lang",
+    "value" : "Eng"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1a81cefb3d6602fd.json",
+  "parameterValues" : [ "pricedsc", "Firefox", "Eng" ]
+}

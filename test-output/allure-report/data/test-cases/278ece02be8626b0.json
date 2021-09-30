@@ -1,0 +1,168 @@
+{
+  "uid" : "278ece02be8626b0",
+  "name" : "validateDefaultSorting",
+  "fullName" : "tests.SortingTests.validateDefaultSorting",
+  "historyId" : "a4bb0c1dfb16f01bd1969e7c52d4fc20",
+  "time" : {
+    "start" : 1632975434900,
+    "stop" : 1632975444619,
+    "duration" : 9719
+  },
+  "description" : "Verify Default Sorting possibilities are available on apts / housing page",
+  "descriptionHtml" : "<p>Verify Default Sorting possibilities are available on apts / housing page</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "BeforeClass",
+    "time" : {
+      "start" : 1632975351179,
+      "stop" : 1632975351189,
+      "duration" : 10
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1632975427729,
+      "stop" : 1632975434871,
+      "duration" : 7142
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify Default Sorting possibilities are available on apts / housing page",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Navigate to Page - apts / housing ",
+      "time" : {
+        "start" : 1632975439837,
+        "stop" : 1632975444434,
+        "duration" : 4597
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "page",
+        "value" : "apts / housing"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Validate Search Sort Options: [date, priceasc, pricedsc]",
+      "time" : {
+        "start" : 1632975444441,
+        "stop" : 1632975444619,
+        "duration" : 178
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "optionsToValidate",
+        "value" : "[date, priceasc, pricedsc]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1632975444662,
+      "stop" : 1632975446008,
+      "duration" : 1346
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.SortingTests"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.SortingTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "validateDefaultSorting"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suite_Sorting"
+  }, {
+    "name" : "suite",
+    "value" : "Test Sorting Options- English"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.SortingTests"
+  }, {
+    "name" : "host",
+    "value" : "TR-C7N09Y2"
+  }, {
+    "name" : "thread",
+    "value" : "119852@TR-C7N09Y2.TestNG-tests-1(20)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "browserName",
+    "value" : "Chrome"
+  }, {
+    "name" : "lang",
+    "value" : "Eng"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "278ece02be8626b0.json",
+  "parameterValues" : [ "Chrome", "Eng" ]
+}

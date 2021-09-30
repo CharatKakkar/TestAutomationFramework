@@ -1,0 +1,337 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "TR-C7N09Y2",
+    "children" : [ {
+      "name" : "119852@TR-C7N09Y2.TestNG-tests-1(20)",
+      "children" : [ {
+        "name" : "validateAfterSearchSortOptions",
+        "uid" : "6ebadbb95a40b432",
+        "parentUid" : "934214d9f2a4a6dd1cb441fa65b51d40",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632975389031,
+          "stop" : 1632975402706,
+          "duration" : 13675
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1 Bed", "Chrome", "Eng" ]
+      }, {
+        "name" : "validateAfterSearchSortOptions",
+        "uid" : "1d1dfc8ea204d274",
+        "parentUid" : "934214d9f2a4a6dd1cb441fa65b51d40",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632975361844,
+          "stop" : 1632975376112,
+          "duration" : 14268
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "ABC", "Chrome", "Eng" ]
+      }, {
+        "name" : "validateDefaultSorting",
+        "uid" : "278ece02be8626b0",
+        "parentUid" : "934214d9f2a4a6dd1cb441fa65b51d40",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632975434900,
+          "stop" : 1632975444619,
+          "duration" : 9719
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Chrome", "Eng" ]
+      }, {
+        "name" : "validateAfterSearchSortOptions",
+        "uid" : "6ccb3d77b6b80f77",
+        "parentUid" : "934214d9f2a4a6dd1cb441fa65b51d40",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632975409998,
+          "stop" : 1632975425758,
+          "duration" : 15760
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "/", "Chrome", "Eng" ]
+      }, {
+        "name" : "validateDefaultSorting",
+        "uid" : "843e2befb138ba8",
+        "parentUid" : "934214d9f2a4a6dd1cb441fa65b51d40",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632975497309,
+          "stop" : 1632975526447,
+          "duration" : 29138
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "pricedsc", "Chrome", "Eng" ]
+      }, {
+        "name" : "validateDefaultSorting",
+        "uid" : "a958ebb8ea71d9c8",
+        "parentUid" : "934214d9f2a4a6dd1cb441fa65b51d40",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632975459291,
+          "stop" : 1632975486664,
+          "duration" : 27373
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "priceasc", "Chrome", "Eng" ]
+      } ],
+      "uid" : "934214d9f2a4a6dd1cb441fa65b51d40"
+    }, {
+      "name" : "119852@TR-C7N09Y2.TestNG-tests-4(23)",
+      "children" : [ {
+        "name" : "validateDefaultSorting",
+        "uid" : "139bc3f1fb3dc994",
+        "parentUid" : "96344b5a10a1b66ae8b6c87b2531c47d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632975499591,
+          "stop" : 1632975522488,
+          "duration" : 22897
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "pricedsc", "Firefox", "Fr" ]
+      }, {
+        "name" : "validateAfterSearchSortOptions",
+        "uid" : "c6eb63068f54c5c2",
+        "parentUid" : "96344b5a10a1b66ae8b6c87b2531c47d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632975386619,
+          "stop" : 1632975400241,
+          "duration" : 13622
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1 Bed", "Firefox", "Fr" ]
+      }, {
+        "name" : "validateAfterSearchSortOptions",
+        "uid" : "1cc8be1d59bf1a51",
+        "parentUid" : "96344b5a10a1b66ae8b6c87b2531c47d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632975413658,
+          "stop" : 1632975426081,
+          "duration" : 12423
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "/", "Firefox", "Fr" ]
+      }, {
+        "name" : "validateAfterSearchSortOptions",
+        "uid" : "fb08d018df543b80",
+        "parentUid" : "96344b5a10a1b66ae8b6c87b2531c47d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632975361412,
+          "stop" : 1632975374660,
+          "duration" : 13248
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "ABC", "Firefox", "Fr" ]
+      }, {
+        "name" : "validateDefaultSorting",
+        "uid" : "7b658d2611a20cff",
+        "parentUid" : "96344b5a10a1b66ae8b6c87b2531c47d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632975439169,
+          "stop" : 1632975446221,
+          "duration" : 7052
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Firefox", "Fr" ]
+      }, {
+        "name" : "validateDefaultSorting",
+        "uid" : "f81c4925a7381779",
+        "parentUid" : "96344b5a10a1b66ae8b6c87b2531c47d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632975469625,
+          "stop" : 1632975486095,
+          "duration" : 16470
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "priceasc", "Firefox", "Fr" ]
+      } ],
+      "uid" : "96344b5a10a1b66ae8b6c87b2531c47d"
+    }, {
+      "name" : "119852@TR-C7N09Y2.TestNG-tests-3(22)",
+      "children" : [ {
+        "name" : "validateDefaultSorting",
+        "uid" : "1a81cefb3d6602fd",
+        "parentUid" : "075576cbad264db35624071b234b65ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632975500271,
+          "stop" : 1632975522740,
+          "duration" : 22469
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "pricedsc", "Firefox", "Eng" ]
+      }, {
+        "name" : "validateDefaultSorting",
+        "uid" : "7a572d3eed517bbc",
+        "parentUid" : "075576cbad264db35624071b234b65ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632975441151,
+          "stop" : 1632975447405,
+          "duration" : 6254
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Firefox", "Eng" ]
+      }, {
+        "name" : "validateAfterSearchSortOptions",
+        "uid" : "3a002a02dd3b9d5a",
+        "parentUid" : "075576cbad264db35624071b234b65ae",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632975412877,
+          "stop" : 1632975425793,
+          "duration" : 12916
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "/", "Firefox", "Eng" ]
+      }, {
+        "name" : "validateAfterSearchSortOptions",
+        "uid" : "fa493eb472eb33a1",
+        "parentUid" : "075576cbad264db35624071b234b65ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632975389001,
+          "stop" : 1632975401415,
+          "duration" : 12414
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1 Bed", "Firefox", "Eng" ]
+      }, {
+        "name" : "validateAfterSearchSortOptions",
+        "uid" : "908029243590f3c3",
+        "parentUid" : "075576cbad264db35624071b234b65ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632975360409,
+          "stop" : 1632975374008,
+          "duration" : 13599
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "ABC", "Firefox", "Eng" ]
+      }, {
+        "name" : "validateDefaultSorting",
+        "uid" : "15b7fe1390aa10b5",
+        "parentUid" : "075576cbad264db35624071b234b65ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632975467810,
+          "stop" : 1632975485262,
+          "duration" : 17452
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "priceasc", "Firefox", "Eng" ]
+      } ],
+      "uid" : "075576cbad264db35624071b234b65ae"
+    }, {
+      "name" : "119852@TR-C7N09Y2.TestNG-tests-2(21)",
+      "children" : [ {
+        "name" : "validateDefaultSorting",
+        "uid" : "4238667729bd67d0",
+        "parentUid" : "311c8aec5583ff67aa927c0486befe78",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632975450105,
+          "stop" : 1632975456571,
+          "duration" : 6466
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Chrome", "Fr" ]
+      }, {
+        "name" : "validateAfterSearchSortOptions",
+        "uid" : "3b033ae4835bb074",
+        "parentUid" : "311c8aec5583ff67aa927c0486befe78",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632975388666,
+          "stop" : 1632975405364,
+          "duration" : 16698
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1 Bed", "Chrome", "Fr" ]
+      }, {
+        "name" : "validateAfterSearchSortOptions",
+        "uid" : "b37d3acdc2ad69f0",
+        "parentUid" : "311c8aec5583ff67aa927c0486befe78",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632975418622,
+          "stop" : 1632975434357,
+          "duration" : 15735
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "/", "Chrome", "Fr" ]
+      }, {
+        "name" : "validateDefaultSorting",
+        "uid" : "377595886645c073",
+        "parentUid" : "311c8aec5583ff67aa927c0486befe78",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632975475915,
+          "stop" : 1632975499751,
+          "duration" : 23836
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "priceasc", "Chrome", "Fr" ]
+      }, {
+        "name" : "validateDefaultSorting",
+        "uid" : "b752af9e18b52c99",
+        "parentUid" : "311c8aec5583ff67aa927c0486befe78",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632975516667,
+          "stop" : 1632975533243,
+          "duration" : 16576
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "pricedsc", "Chrome", "Fr" ]
+      }, {
+        "name" : "validateAfterSearchSortOptions",
+        "uid" : "695ca4d3bf2af8bd",
+        "parentUid" : "311c8aec5583ff67aa927c0486befe78",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632975362217,
+          "stop" : 1632975375489,
+          "duration" : 13272
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "ABC", "Chrome", "Fr" ]
+      } ],
+      "uid" : "311c8aec5583ff67aa927c0486befe78"
+    } ],
+    "uid" : "c16ecb8290a5746af87b6c795b9f6473"
+  } ]
+}

@@ -1,0 +1,65 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Sorting options are absent: [rel] expected [true] but found [false]",
+      "children" : [ {
+        "name" : "validateAfterSearchSortOptions",
+        "uid" : "6ccb3d77b6b80f77",
+        "parentUid" : "c281a17ecb06b5bd6a6fe9419caa1d0c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632975409998,
+          "stop" : 1632975425758,
+          "duration" : 15760
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "/", "Chrome", "Eng" ]
+      }, {
+        "name" : "validateAfterSearchSortOptions",
+        "uid" : "3a002a02dd3b9d5a",
+        "parentUid" : "c281a17ecb06b5bd6a6fe9419caa1d0c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632975412877,
+          "stop" : 1632975425793,
+          "duration" : 12916
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "/", "Firefox", "Eng" ]
+      }, {
+        "name" : "validateAfterSearchSortOptions",
+        "uid" : "1cc8be1d59bf1a51",
+        "parentUid" : "c281a17ecb06b5bd6a6fe9419caa1d0c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632975413658,
+          "stop" : 1632975426081,
+          "duration" : 12423
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "/", "Firefox", "Fr" ]
+      }, {
+        "name" : "validateAfterSearchSortOptions",
+        "uid" : "b37d3acdc2ad69f0",
+        "parentUid" : "c281a17ecb06b5bd6a6fe9419caa1d0c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632975418622,
+          "stop" : 1632975434357,
+          "duration" : 15735
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "/", "Chrome", "Fr" ]
+      } ],
+      "uid" : "c281a17ecb06b5bd6a6fe9419caa1d0c"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}
