@@ -2,27 +2,21 @@ package pages;
 
 import base.Base;
 import io.qameta.allure.Step;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import utils.Constants;
 import utils.Helper;
-import utils.SortType;
+import utils.Log;
 
-import java.util.LinkedList;
 import java.util.List;
 
 public abstract class SubCategoryAbstract extends Base {
 
-    WebDriver driver;
     public final static String DataSelectionAttribute= "data-selection";
 
-    public SubCategoryAbstract(WebDriver driver, Logger log){
-        super(driver,log);
-        this.driver = driver;
+    public SubCategoryAbstract(WebDriver driver){
+        super(driver);
     }
 
     @FindBy(xpath = "//div[@class='search-sort']//ul//li//a")
@@ -72,7 +66,7 @@ public abstract class SubCategoryAbstract extends Base {
 
     @Step("Perform search for - {0}")
     public void performSearch(String keys){
-        log.info("Searching:" + keys);
+        Log.info("Searching:" + keys);
         searchField.sendKeys(keys);
         searchButton_click();
     }
@@ -83,7 +77,7 @@ public abstract class SubCategoryAbstract extends Base {
     }
 
     @Step("Validate Search Sort Options: {0}")
-    public boolean validateSearchSortOptions(List<String> optionsToValidate){
+    public List<String> validateSearchSortOptions(List<String> optionsToValidate){
         return Helper.validateSearchSortOptions(optionsToValidate,sortSelectOptions);
     }
 

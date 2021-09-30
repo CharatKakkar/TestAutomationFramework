@@ -1,4 +1,4 @@
-package Log;
+package utils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 public class Log {
@@ -8,7 +8,7 @@ public class Log {
     public static void info (String message) {
         Log.info(message);
     }
-    //Warn Level Logss
+    //Warn Level Logs
     public static void warn (String message) {
         Log.warn(message);
     }

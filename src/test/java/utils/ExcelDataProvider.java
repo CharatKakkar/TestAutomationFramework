@@ -18,6 +18,7 @@ public class ExcelDataProvider {
     public static final String defaultSortTestDataFile = "src/test/testData/SortingTestData.xlsx";
     public static final String defautSearchTestData = "src/test/testData/SearchTestData.xlsx";
     public static final String defaultSheetName= "Sheet1";
+
     @DataProvider(name ="SortTestData")
     public Object[][] excelDP(ITestContext context) {
         List<String> includedGroups = Arrays.asList(context.getIncludedGroups());
@@ -68,7 +69,7 @@ public class ExcelDataProvider {
             for (int i = 1; i < noOfRows; i++) {
                 for (int j = 0; j < noOfCols; j++) {
                     row = sh.getRow(i);
-                    cell = row.getCell(j); //1,1
+                    cell = row.getCell(j);
 
                     switch (cell.getCellType()) {
                         case Cell.CELL_TYPE_STRING :
@@ -90,7 +91,7 @@ public class ExcelDataProvider {
         }
 
         catch (Exception e) {
-            System.out.println("The exception is: " + e.getMessage());
+            Log.error("The exception is: " + e.getMessage());
         }
 
         return data;

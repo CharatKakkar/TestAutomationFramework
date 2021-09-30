@@ -1,5 +1,7 @@
 package configReader;
 
+import utils.Log;
+
 import java.io.FileInputStream;
 import java.util.Properties;
 
@@ -10,7 +12,7 @@ public class ConfigReader {
 
     public Properties initLangProp(String lang) {
 
-        System.out.println("lang is : " + lang);
+        Log.debug("lang is : " + lang);
         prop = new Properties();
         try {
             switch (lang.toLowerCase()) {
@@ -21,12 +23,12 @@ public class ConfigReader {
                     ip = new FileInputStream("src/resources/lang.fr.properties");
                     break;
                 default:
-                    System.out.println("lang not found..." + lang);
+                    Log.debug("lang not found..." + lang);
                     break;
             }
             prop.load(ip);
         } catch (Exception e) {
-            System.out.println(lang + " : properties file not found");
+            Log.error(lang + " : properties file not found");
         }
         return prop;
     }

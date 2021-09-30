@@ -83,12 +83,16 @@
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
+                    <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
+                    <systemPropertyVariables> <!-- this is log file locations, to be retrived using system.getproperty(log.directory) -->
+                        <log.directory>${project.basedir}\Output\${maven.build.timestamp}\Logs\</log.directory>
+                    </systemPropertyVariables>
                     <suiteXmlFiles>
                         <suiteXmlFile>E:\Udemy\SportStop\07f2d9b8-2943-4c88-9c61-b86b3d865511\src\test\resources\testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
